@@ -7,4 +7,5 @@ then
 else
 	# if no, then run test
 	echo "run test!"
+	./script_to_test.sh
 fi
