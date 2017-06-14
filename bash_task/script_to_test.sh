@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # run basic script
-./script_on_server.sh
+#./script_on_server.sh
 
 # compare result of upper script
 i="1"
@@ -12,7 +12,7 @@ do
 		((i++))
 		continue;
 	else
-		echo "something is wrong $i and $line"
-		exit
+		echo "something is wrong"
+		exit 1
 	fi
 done
