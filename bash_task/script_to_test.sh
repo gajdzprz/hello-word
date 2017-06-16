@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# run basic script
-#./script_on_server.sh
-
-# compare result of upper script
+# compare result with script_on_server.sh
 i="1"
 for line in $(cat file.txt)
 do
