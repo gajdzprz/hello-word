@@ -2,7 +2,7 @@
 
 # compare result with script_on_server.sh
 i="1"
-for line in $(cat file.txt)
+for line in $(cat /home/gajdzprz/git_repo/hello-word/bash_task/file.txt)
 do
 	if [ $i -eq $line ]
 	then
