@@ -16,8 +16,8 @@ else
 		echo "OK!"
 	else
 		# test fail
-	#	cd ../	# need to run git bisect from top level of repo
-	#	git bisect start HEAD HEAD~10
-	#	git bisect run ./script_to_test.sh | grep 'email'
+		cd ../	# need to run git bisect from top level of repo
+		git bisect start HEAD HEAD~10
+		git bisect run ./script_to_test.sh | grep 'email'
 	fi
 fi
