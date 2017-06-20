@@ -17,8 +17,8 @@ else
 		git bisect start HEAD HEAD~5
 		bad_commit=`git bisect run ./bash_task/script_to_test.sh`
 		git bisect reset
-		mail=`$bad_commit | grep 'Author' | awk '{print $4}' | sed 's/[<>]//g'`
-		bad_commit=`$bad_commit | grep 'commit'`
+		mail=`echo $bad_commit | grep 'Author' | awk '{print $4}' | sed 's/[<>]//g'`
+		bad_commit=`echo $bad_commit | grep 'commit'`
 		echo $bad_commit | mail -s "Your commit broke the project" $mail
 		#git bisect run ./bash_task/script_to_test.sh | grep 'Author' | awk '{print $4}' | sed 's/[<>]//g'
 	fi
