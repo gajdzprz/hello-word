@@ -18,6 +18,6 @@ else
 		# test fail
 		cd ../	# need to run git bisect from top level of repo
 		git bisect start HEAD HEAD~5
-		git bisect run ./bash_task/script_to_test.sh | grep 'email'
+		git bisect run ./bash_task/script_to_test.sh | grep 'Author' | awk '{print $4}' | sed 's/[<>]//g'
 	fi
 fi
