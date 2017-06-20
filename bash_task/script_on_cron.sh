@@ -5,10 +5,7 @@ if git pull | grep 'up-to-date'
 then
 	echo "everything is up-to-date"
 else
-	# if no, then run script to build everything
-	./script_on_server.sh
-
-	# then run test
+	# if no, then run test which run script to build everything and test
 	echo "run test!"
 	if ./script_to_test.sh 
 	then
