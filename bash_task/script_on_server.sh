@@ -7,7 +7,7 @@ echo "Just initial script";
 echo -n > file.txt;
 
 # writing to file.txt from 1 to 10 in new line
-for i in {1..10}
+for i in {2..10}
 do
 	echo $i >> file.txt;
 done
