@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# changing directory for git pull
+cd /home/gajdzprz/git_repo/hello-word/bash_task/
+
 # checking if everything is up-to-date
 if git pull | grep 'up-to-date'
 then
